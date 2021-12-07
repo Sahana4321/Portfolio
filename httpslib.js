@@ -18,4 +18,4 @@ http.createServer((req,res) => {
         res.write(data);
     }
     res.end();
-}).listen(9080, () => {console.log('Server started')});
+}).listen(process.env.PORT, () => {console.log('Server started')});
