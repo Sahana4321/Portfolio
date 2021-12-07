@@ -10,6 +10,7 @@ http.createServer((req,res) => {
         res.write(data);
 
     }
+    
     else if(req.url=='/about'){
         let data=fs.readFileSync('Static/about.html');
         res.write(data)
